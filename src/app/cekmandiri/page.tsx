@@ -94,16 +94,16 @@ const toNext = () =>{
      <div className="w-full flex flex-wrap">
       <div className="w-full px-4">
            <label htmlFor="">Umur</label>
-           <input onChange={(target)=>{setUmur(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <input onChange={(target)=>{setUmur(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
          </div>
          <div className="w-1/2 px-4">
            <label htmlFor="">Tinggi Badan (cm)</label>
-           <input onChange={(target)=>{setTinggi(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <input onChange={(target)=>{setTinggi(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
          </div>
 
          <div className="w-1/2 px-4">
            <label htmlFor="">Berat Badan (kg)</label>
-           <input onChange={(target)=>{setBerat(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <input onChange={(target)=>{setBerat(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
          </div>
       </div>
     </div>
@@ -177,7 +177,7 @@ const toNext = () =>{
 }
    
    <div className="">
-    <a href="/" className='text-blue-400'>Kembali ke home </a>
+    <a href="/information" className='text-blue-400'>Kembali ke home </a>
    </div>
 
 

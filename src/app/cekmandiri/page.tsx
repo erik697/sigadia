@@ -4,13 +4,21 @@ import React, { useState } from 'react'
 function CekMandiri() {
 
 const [jawaban, setJawaban] = useState([
-  {question : 'Apakah Anda berolahraga secara teratur?', answer : ''},
-  {question : 'Apakah Anda memiliki riwayat keluarga dengan diabetes?', answer : ''},
-  {question : 'Apakah Anda merokok?', answer : ''},
-  {question : 'Apakah Anda merasa haus berlebihan?', answer : ''},
-  {question : 'Apakah Anda sering buang air kecil?', answer : ''},
-  {question : 'Apakah Anda mengalami penurunan berat badan drastis?', answer : ''},
-  {question : 'Apakah Anda sering merasa lelah?', answer : ''}
+  {question : 'Apakah salah satu dari orang tuan Anda memiliki riwayat diabetes meliitus ?', answer : ''},
+  {question : 'Apakah Anda sering mengalami rasa nyeri atau kesemutan di tangan dan kaki?', answer : ''},
+  {question : 'Apakah anda sering  mengonsumsi makanan tinggi gula, seperti kue ?', answer : ''},
+  {question : 'Apakah Anda merasa lebih cepat lelah daripada biasanya?', answer : ''},
+  {question : 'Apakah Anda memperhatikan peningkatan rasa haus dan frekuensi buang air kecil?', answer : ''},
+  {question : 'Apakah Anda memiliki riwayat tekanan darah tinggi?', answer : ''},
+  {question : 'Apakah Anda berolahraga secara teratur dalam seminggu?', answer : ''},
+  {question : 'Apakah Anda sering merasa lapar meskipun sudah makan?', answer : ''},
+  {question : 'Apakah Anda memiliki pola makan yang tidak seimbang, seperti jarang mengonsumsi sayur dan buah?', answer : ''},
+  {question : 'Apakah Anda merasakan peningkatan berat badan dalam beberapa bulan terakhir?', answer : ''},
+  {question : 'Apakah Anda merasa stres atau tertekan dalam kehidupan sehari-hari?', answer : ''},
+  {question : 'Apakah Anda pernah mengalami luka yang sulit disembuhkan?', answer : ''},
+  {question : 'Apakah Anda memiliki kebiasaan merokok dan minum alkohol?', answer : ''},
+  {question : 'Apakah Anda mengonsumsi makanan yang tinggi lemak jenuh dalam diet Anda?', answer : ''},
+  {question : 'Apakah Anda rutin memeriksakan kadar gula darah Anda?', answer : ''},
 
 ])
 
@@ -21,6 +29,7 @@ const [hasil, setHasil] = useState('')
 const [tinggi, setTinggi] = useState(0)
 const [berat, setBerat] = useState(0)
 const [umur, setUmur] = useState(0)
+const [bmi, setBmi] = useState(0)
 
 const [active, setActive] = useState(0)
 
@@ -30,24 +39,68 @@ const addAnswer = (val : string) =>{
   setJawaban([...arr])
 }
 
+const itungUmur = (tglLahir:string) => {
+  const sekarang = new Date();
+  const lahir = new Date(tglLahir);
+
+  let umur = sekarang.getFullYear() - lahir.getFullYear();
+
+  const bulanSekarang = sekarang.getMonth();
+  const tanggalSekarang = sekarang.getDate();
+  const bulanLahir = lahir.getMonth();
+  const tanggalLahir = lahir.getDate();
+
+  if (bulanSekarang < bulanLahir || (bulanSekarang === bulanLahir && tanggalSekarang < tanggalLahir)) {
+    umur--;
+  }
+
+  // console.log('ini umur',umur);
+  setUmur(umur)
+}
+
+const itungmbi = (val : number, col : string) => {
+  let t = tinggi;
+  let b = berat;
+  if(col === 'tinggi'){
+    t = val;
+    setTinggi(val)
+  }
+  else{
+    b = val
+    setBerat(val)
+  }
+  const tinggiM = t/100
+
+const bmi = b/(tinggiM*tinggiM)
+
+  console.log('ini umur',t, tinggiM, b);
+  setBmi(bmi)
+}
+
 const cekDiabetes = () =>{
   let hasilCek = ''
   let score = 0
-  const tinggiM = tinggi/100
-  const bmi = berat/(tinggiM*tinggiM)
   score += umur >= 45 ? 1 : 0
   score += bmi >= 25 ? 1 : 0
-  score += jawaban[0].answer === 'tidak' ? 1 : 0
+  score += jawaban[0].answer === 'ya' ? 2 : 0
   score += jawaban[1].answer === 'ya' ? 2 : 0
-  score += jawaban[2].answer === 'ya' ? 1 : 0
-  score += jawaban[3].answer === 'ya' ? 1 : 0
-  score += jawaban[4].answer === 'ya' ? 1 : 0
-  score += jawaban[5].answer === 'ya' ? 1 : 0
-  score += jawaban[6].answer === 'ya' ? 1 : 0
-if(score <= 3){
+  score += jawaban[2].answer === 'ya' ? 1.5 : 0
+  score += jawaban[3].answer === 'ya' ? 1.5 : 0
+  score += jawaban[4].answer === 'ya' ? 2 : 0
+  score += jawaban[5].answer === 'ya' ? 2 : 0
+  score += jawaban[6].answer === 'tidak' ? 2 : 0
+  score += jawaban[7].answer === 'ya' ? 1.5 : 0
+  score += jawaban[8].answer === 'ya' ? 1.5 : 0
+  score += jawaban[9].answer === 'ya' ? 1.5 : 0
+  score += jawaban[10].answer === 'ya' ? 1 : 0
+  score += jawaban[11].answer === 'ya' ? 2 : 0
+  score += jawaban[12].answer === 'ya' ? 2 : 0
+  score += jawaban[13].answer === 'ya' ? 1.5 : 0
+  score += jawaban[14].answer === 'ya' ? 2 : 0
+if(score <= 8){
   hasilCek = '1'
 }
-else if(score <= 6){
+else if(score <= 16){
   hasilCek = '2'
 }
 else{
@@ -63,12 +116,29 @@ console.log(hasilCek)
 
 const toNext = () =>{
   const val = active+1
-  if(val <=6)
+  if(val <=14)
   {
     setActive(val)
   }
   else{
-    cekDiabetes()
+    const hasil = jawaban.filter(item => item.answer === '');
+    console.log(hasil)
+    if(hasil.length > 0){
+      alert('masih ada jawaban yang belum terisi. tolong cek kembali!')
+    }
+    else{
+      cekDiabetes()
+    }
+  }
+}
+
+const toQuestion = () =>{
+  if(umur != 0 && bmi != 0){
+
+    setProfile(false)
+  }
+  else{
+    alert('Lengkapi data dengan benar terlebih dahulu!')
   }
 }
 
@@ -85,7 +155,7 @@ const toNext = () =>{
       <h2 className="text-xl font-semibold flex items-center">
         Cek Diri
       </h2>
-      <span className="text-gray-500 text-sm">{active+1}/7</span>
+      <span className="text-gray-500 text-sm"></span>
     </div>
 
 
@@ -93,17 +163,26 @@ const toNext = () =>{
     <div className="space-y-4">
      <div className="w-full flex flex-wrap">
       <div className="w-full px-4">
-           <label htmlFor="">Umur</label>
-           <input onChange={(target)=>{setUmur(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <label htmlFor="">Tanggal Lahir</label>
+           <input onChange={(target)=>{itungUmur(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="date" />
+         </div>
+      <div className="w-full px-4">
+           <label htmlFor="">Umur (tahun)</label>
+           <input value={umur} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4 bg-slate-200' type="number" readOnly />
          </div>
          <div className="w-1/2 px-4">
            <label htmlFor="">Tinggi Badan (cm)</label>
-           <input onChange={(target)=>{setTinggi(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <input onChange={(target)=>{itungmbi(Number(target.currentTarget.value), 'tinggi')}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
          </div>
 
          <div className="w-1/2 px-4">
            <label htmlFor="">Berat Badan (kg)</label>
-           <input onChange={(target)=>{setBerat(Number(target.currentTarget.value))}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+           <input onChange={(target)=>{itungmbi(Number(target.currentTarget.value), 'berat')}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="number" />
+         </div>
+
+         <div className="w-full px-4">
+           <label htmlFor="">MBI</label>
+           <input value={bmi} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4 bg-slate-200' type="text" readOnly />
          </div>
       </div>
     </div>
@@ -112,7 +191,7 @@ const toNext = () =>{
       {/* <button onClick={()=>{setActive(active-1)}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
         Kembali
       </button> */}
-      <button onClick={()=>{setProfile(false)}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+      <button onClick={()=>{toQuestion()}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
         Lanjut
       </button>
     </div>
@@ -125,7 +204,7 @@ const toNext = () =>{
       <h2 className="text-xl font-semibold flex items-center">
         Cek Diri
       </h2>
-      <span className="text-gray-500 text-sm">{active+1}/7</span>
+      <span className="text-gray-500 text-sm">{active+1}/15</span>
     </div>
 
     <p className="text-gray-800 mb-6">
@@ -144,9 +223,17 @@ const toNext = () =>{
     </div>
 
     <div className="flex justify-between mt-8">
+      {active > 0 ? 
       <button onClick={()=>{setActive(active-1);}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
         Kembali
       </button>
+      :
+      <button onClick={()=>{}} className="px-6 py-2 text-white rounded-md hover:bg-slate-700 bg-slate-500" disabled>
+        Kembali
+      </button>
+      
+      }
+    
       <button onClick={()=>{toNext()}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
         Lanjut
       </button>

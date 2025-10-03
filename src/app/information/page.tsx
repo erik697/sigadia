@@ -125,7 +125,7 @@ function Information() {
 <div id="three">
 <div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
     <div className="md:w-[30%] text-center flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> Sedikit Tentang Diabetes <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-red-600 mr-2'></span> Tentang Diabetes <span className='flex-grow border-t border-red-600 ml-2'></span>
     </div>
 </div>
 
@@ -137,6 +137,7 @@ function Information() {
 <p>
     Diabetes adalah penyakit kronis yang terjadi ketika tubuh tidak dapat memproduksi insulin secara cukup, atau tidak dapat menggunakan insulin secara efektif, sehingga kadar gula (glukosa) dalam darah menjadi tinggi. 
 </p>
+
 </div>
 </div>
 
@@ -147,7 +148,112 @@ function Information() {
 </div>
 </div>
 
+<div id="three">
+<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-red-600 mr-2'></span> Klasifikasi diabetes melitus <span className='flex-grow border-t border-red-600 ml-2'></span>
+    </div>
+</div>
 
+
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-red-500 font-bold mb-2'>Klasifikasi</h1>
+<p>
+Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yaitu: <br />
+
+
+1. Diabetes Tipe 1  <br />
+   - Pengertian : Diabetes tipe 1 adalah penyakit autoimun di mana sistem kekebalan tubuh menyerang dan menghancurkan sel-sel pankreas yang memproduksi insulin. Akibatnya, tubuh tidak dapat memproduksi insulin atau produksinya sangat sedikit.  <br />
+   - Penyebab : Faktor genetik dan infeksi virus diduga menjadi pemicu utama. Biasanya muncul pada anak-anak dan remaja, tetapi bisa terjadi pada usia berapa pun.  <br />
+   - Ciri-ciri : Penderita memerlukan suntikan insulin seumur hidup karena tubuh tidak mampu memproduksi insulin sendiri.  <br />
+   - Faktor Risiko :  Riwayat keluarga, infeksi virus <br />
+2. Diabetes Tipe 2 <br />
+   - Pengertian : Diabetes tipe 2 terjadi ketika tubuh masih memproduksi insulin, tetapi sel-sel tubuh menjadi kurang sensitif terhadap insulin (resistensi insulin). Akibatnya, gula darah tetap tinggi. <br /> 
+   - Penyebab : Kombinasi faktor genetik dan gaya hidup, seperti kelebihan berat badan, kurang aktivitas fisik, pola makan tidak sehat, dan bertambahnya usia.  <br />
+   - Ciri-ciri :  Lebih sering terjadi pada orang dewasa, namun kini juga ditemukan pada usia muda.  <br />
+   - Faktor Risiko : Obesitas, riwayat keluarga, tekanan darah tinggi, kadar kolesterol tidak normal, dan kurang olahraga.  <br />
+   - Penanganan :  Meliputi perubahan gaya hidup, pengaturan pola makan, olahraga, dan penggunaan obat atau insulin jika diperlukan.  <br />
+
+3. Diabetes Gestasional <br />
+   - Pengertian :  Diabetes yang terjadi selama kehamilan dan biasanya hilang setelah melahirkan.  <br />
+   - Penyebab : Hormon yang diproduksi oleh plasenta menyebabkan sel tubuh menjadi kurang sensitif terhadap insulin. <br /> 
+   - Risiko : Jika tidak dikontrol, dapat membahayakan ibu dan janin serta meningkatkan risiko diabetes tipe 2 di masa depan.  <br />
+   - Faktor Risiko : Kegemukan saat hamil atau kenaikan berat badan berlebihan selama kehamilan.  <br />
+
+4. Diabetes Tipe Spesifik Lainnya  <br />
+   - Diabetes yang disebabkan oleh kondisi medis tertentu, seperti penyakit pankreas (fibrosis kistik, pankreatitis), kelainan genetik (sindroma diabetes monogenik), atau penggunaan obat-obatan tertentu. <br />
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="three">
+<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-red-600 mr-2'></span> Komplikasi Pada Diabetes Mellitus <span className='flex-grow border-t border-red-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-red-700">
+<div className="hidden md:block w-1/2">
+<Image src={'/images/komplikasi.jpg'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
+</div>
+
+<div className="w-full md:w-1/2 flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-red-500 font-bold mb-2'>Komplikasi</h1>
+<p>
+1. Gangguan Penglihatan hingga Kebutaan <br />
+2. Kerusakan Ginjal <br />
+3. Ulkus Kaki <br />
+4. Penyakit Jantung koroner <br />
+5. Stroke <br />
+</p>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<div id="three">
+<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-red-600 mr-2'></span> Upaya Pencegahan Diabetes  <span className='flex-grow border-t border-red-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-red-700">
+<div className="w-full md:w-1/2 flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-red-500 font-bold mb-2'>Pencegahan</h1>
+<p>
+1. Mengkonsumsi makanan sehat <br />
+2. Berolahraga <br />
+3. Hindari stres <br />
+4. Hindari Rokok dan Minuman Beralkohol <br />
+5. Menurunkan berat badan <br />
+</p>
+
+</div>
+</div>
+
+<div className="hidden md:block w-1/2">
+<Image src={'/images/pencegahan.jpg'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
+</div>
+
+</div>
+</div>
 
 
         {/* <div id='one' className="pt-28 mx-8">
@@ -161,7 +267,7 @@ function Information() {
 
       </div>
 
-      <div className="text-center mb-5 mt-24">Copyright © techblendz 2025</div>
+      <div className="text-center mb-5 mt-24">Copyright © sigadia powered by techblendz 2025</div>
     </div>
   )
 }

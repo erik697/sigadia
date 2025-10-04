@@ -193,7 +193,7 @@ const toQuestion = () =>{
          </div>
 
          <div className="w-full px-4">
-           <label htmlFor="">MBI</label>
+           <label htmlFor="">IMT</label>
            <input value={bmi} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4 bg-slate-200' type="text" readOnly />
          </div>
       </div>

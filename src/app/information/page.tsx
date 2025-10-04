@@ -24,31 +24,31 @@ function Information() {
                         <a href='#one' className="md:mx-8 hidden md:block">Home</a>
                         <a href='#two' className="md:mx-8 hidden md:block">About</a>
                         <a href='#three' className="md:mx-8 hidden md:block">Diabetes</a>
-                        <a href='/cekmandiri' className="mx-8 p-1 rounded-2xl md:px-4 bg-linear-to-r from-red-700 to-slate-800 text-white">Cek Diri</a>
+                        <a href='/cekmandiri' className="mx-8 p-1 rounded-2xl md:px-4 bg-linear-to-r from-sky-700 to-slate-800 text-white">Cek Diri</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="one" className="h-dvh w-full flex flex-wrap-reverse bg-linear-to-b from-red-500 to-white ">
+        <div id="one" className="h-dvh w-full flex flex-wrap-reverse bg-linear-to-b from-sky-500 to-white ">
             <div className="mt-auto w-full md:w-1/2">
                 <div className="mx-4 md:mx-24 pb-10">
                     <p className='text-5xl'>Do what it takes to start</p>
-                    <p className='text-3xl text-red-500 mt-4'>to prevent diabetes and live well</p>
+                    <p className='text-3xl text-sky-500 mt-4'>to prevent diabetes and live well</p>
                     <div className="mt-8">    
-                        <a href="" className='px-4 py-4 rounded-xl bg-linear-to-r from-red-700 to-slate-800 text-white mr-4 text-lg'>Jelajahi</a>
-                        <a href="/cekmandiri" className='px-4 py-4 rounded-xl bg-linear-to-r border-2 border-red-500 text-red-500 text-lg box-border'>Cek Diri</a>
+                        <a href="" className='px-4 py-4 rounded-xl bg-linear-to-r from-sky-700 to-slate-800 text-white mr-4 text-lg'>Jelajahi</a>
+                        <a href="/cekmandiri" className='px-4 py-4 rounded-xl bg-linear-to-r border-2 border-sky-500 text-sky-500 text-lg box-border'>Cek Diri</a>
                     </div>
                 </div>
             </div>
 
-            <div className="hidden md:w-1/2 mt-auto">
+            <div className="hidden md:w-1/2 md:block mt-auto">
 <Image src={'/images/hero.png'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
             
             </div>
         </div>   
 
-            <div className="bg-red-800 w-full h-52">
+            <div className="bg-sky-800 w-full h-52">
 
             </div>
 
@@ -94,9 +94,9 @@ function Information() {
 
 
 <div id="two">
-<div className="text-2xl text-red-600 text-center flex items-center justify-center my-4">
+<div className="text-2xl text-sky-600 text-center flex items-center justify-center my-4">
     <div className="w-[30%] text-center mt-24 flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> SIGADIA <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> SIGADIA <span className='flex-grow border-t border-sky-600 ml-2'></span>
     </div>
 </div>
 
@@ -123,17 +123,17 @@ function Information() {
 
     
 <div id="three">
-<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
     <div className="md:w-[30%] text-center flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> Tentang Diabetes <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> Tentang Diabetes <span className='flex-grow border-t border-sky-600 ml-2'></span>
     </div>
 </div>
 
 
-<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-red-700">
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-sky-700">
 <div className="w-full md:w-1/2 flex items-center justify-center">
 <div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
-<h1 className='text-lg text-red-500 font-bold mb-2'>Diabetes</h1>
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Diabetes</h1>
 <p>
     Diabetes adalah penyakit kronis yang terjadi ketika tubuh tidak dapat memproduksi insulin secara cukup, atau tidak dapat menggunakan insulin secara efektif, sehingga kadar gula (glukosa) dalam darah menjadi tinggi. 
 </p>
@@ -149,9 +149,9 @@ function Information() {
 </div>
 
 <div id="three">
-<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
     <div className="md:w-[30%] text-center flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> Klasifikasi diabetes melitus <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> Klasifikasi diabetes melitus <span className='flex-grow border-t border-sky-600 ml-2'></span>
     </div>
 </div>
 
@@ -159,7 +159,7 @@ function Information() {
 <div className="w-full flex flex-wrap px-6 md:px-18 py-10 ">
 <div className="w-full flex items-center justify-center">
 <div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
-<h1 className='text-lg text-red-500 font-bold mb-2'>Klasifikasi</h1>
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Klasifikasi</h1>
 <p>
 Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yaitu: <br />
 
@@ -194,21 +194,21 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 </div>
 
 <div id="three">
-<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
     <div className="md:w-[30%] text-center flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> Komplikasi Pada Diabetes Mellitus <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> Komplikasi Pada Diabetes Mellitus <span className='flex-grow border-t border-sky-600 ml-2'></span>
     </div>
 </div>
 
 
-<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-red-700">
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-sky-700">
 <div className="hidden md:block w-1/2">
 <Image src={'/images/komplikasi.jpg'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
 </div>
 
 <div className="w-full md:w-1/2 flex items-center justify-center">
 <div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
-<h1 className='text-lg text-red-500 font-bold mb-2'>Komplikasi</h1>
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Komplikasi</h1>
 <p>
 1. Gangguan Penglihatan hingga Kebutaan <br />
 2. Kerusakan Ginjal <br />
@@ -226,17 +226,17 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 </div>
 
 <div id="three">
-<div className="text-2xl text-red-600 text-center mt-24 flex items-center justify-center my-4">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
     <div className="md:w-[30%] text-center flex items-center justify-center my-4">
-   <span className='flex-grow border-t border-red-600 mr-2'></span> Upaya Pencegahan Diabetes  <span className='flex-grow border-t border-red-600 ml-2'></span>
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> Upaya Pencegahan Diabetes  <span className='flex-grow border-t border-sky-600 ml-2'></span>
     </div>
 </div>
 
 
-<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-red-700">
+<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-sky-700">
 <div className="w-full md:w-1/2 flex items-center justify-center">
 <div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
-<h1 className='text-lg text-red-500 font-bold mb-2'>Pencegahan</h1>
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Pencegahan</h1>
 <p>
 1. Mengkonsumsi makanan sehat <br />
 2. Berolahraga <br />
@@ -267,7 +267,7 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 
       </div>
 
-      <div className="text-center mb-5 mt-24">Copyright © sigadia powered by techblendz 2025</div>
+      <div className="text-center mb-5 mt-24">Copyright © sigadia powesky by techblendz 2025</div>
     </div>
   )
 }

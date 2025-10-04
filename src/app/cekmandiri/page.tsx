@@ -145,7 +145,7 @@ const toQuestion = () =>{
 }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-red-800 to-red-600 px-5 md:px-0">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-sky-800 to-sky-600 px-5 md:px-0">
 
 
 {profile ?
@@ -200,10 +200,10 @@ const toQuestion = () =>{
     </div>
 
     <div className="flex justify-end mt-8">
-      {/* <button onClick={()=>{setActive(active-1)}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+      {/* <button onClick={()=>{setActive(active-1)}} className="px-6 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700">
         Kembali
       </button> */}
-      <button onClick={()=>{toQuestion()}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+      <button onClick={()=>{toQuestion()}} className="px-6 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700">
         Lanjut
       </button>
     </div>
@@ -225,18 +225,18 @@ const toQuestion = () =>{
 
     <div className="space-y-4">
       <label className="flex items-center space-x-2 cursor-pointer">
-        <input onClick={()=>{addAnswer('ya')}} type="radio" name="hipertensi" value="ya" className="form-radio text-red-600" checked={jawaban[active].answer === 'ya'}/>
+        <input onClick={()=>{addAnswer('ya')}} type="radio" name="hipertensi" value="ya" className="form-radio text-sky-600" checked={jawaban[active].answer === 'ya'}/>
         <span>Ya</span>
       </label>
       <label className="flex items-center space-x-2 cursor-pointer">
-        <input onClick={()=>{addAnswer('tidak')}} type="radio" name="hipertensi" value="tidak" className="form-radio text-red-600" checked={jawaban[active].answer === 'tidak'}/>
+        <input onClick={()=>{addAnswer('tidak')}} type="radio" name="hipertensi" value="tidak" className="form-radio text-sky-600" checked={jawaban[active].answer === 'tidak'}/>
         <span>Tidak</span>
       </label>
     </div>
 
     <div className="flex justify-between mt-8">
       {active > 0 ? 
-      <button onClick={()=>{setActive(active-1);}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+      <button onClick={()=>{setActive(active-1);}} className="px-6 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700">
         Kembali
       </button>
       :
@@ -246,7 +246,7 @@ const toQuestion = () =>{
       
       }
     
-      <button onClick={()=>{toNext()}} className="px-6 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+      <button onClick={()=>{toNext()}} className="px-6 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700">
         Lanjut
       </button>
     </div>
@@ -266,11 +266,11 @@ const toQuestion = () =>{
       Risiko rendah
     </p> :
   hasil === '2' ?
- <p className="text-green-500 mb-6 text-2xl">
+ <p className="text-yellow-500 mb-6 text-2xl">
       Risiko sedang
     </p>
   :
- <p className="text-green-500 mb-6 text-2xl">
+ <p className="text-red-500 mb-6 text-2xl">
       Risiko tinggi — dianjurkan tes medis lebih lanjut
     </p>
 }

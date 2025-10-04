@@ -25,6 +25,8 @@ const [jawaban, setJawaban] = useState([
 const [profile, setProfile] = useState(true)
 const [result, setResult] = useState(false)
 const [hasil, setHasil] = useState('')
+const [nama, setNama] = useState('')
+const [alamat, setAlamat] = useState('')
 
 const [tinggi, setTinggi] = useState(0)
 const [berat, setBerat] = useState(0)
@@ -133,7 +135,7 @@ const toNext = () =>{
 }
 
 const toQuestion = () =>{
-  if(umur != 0 && bmi != 0){
+  if(umur != 0 && bmi != 0 && nama != '' && alamat != ''){
 
     setProfile(false)
   }
@@ -163,6 +165,16 @@ const toQuestion = () =>{
     <div className="space-y-4">
      <div className="w-full flex flex-wrap">
       <div className="w-full px-4">
+         <div className="w-full px-4">
+           <label htmlFor="">Nama</label>
+           <input onChange={(target)=>{setNama(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="text" />
+         </div>
+
+         <div className="w-full px-4">
+           <label htmlFor="">Alamat</label>
+           <input onChange={(target)=>{setAlamat(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="text" />
+         </div>
+
            <label htmlFor="">Tanggal Lahir</label>
            <input onChange={(target)=>{itungUmur(target.currentTarget.value)}} className='border-2 border-slate-500 w-full py-2 px-1 rounded-xl mt-2 mb-4' type="date" />
          </div>

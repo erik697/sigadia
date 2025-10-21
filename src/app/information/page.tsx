@@ -202,8 +202,8 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 
 
 <div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-sky-700">
-<div className="hidden md:block w-1/2">
-<Image src={'/images/komplikasi.jpg'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
+<div className="w-full md:block md:w-1/2 flex items-center justify-center mb-5">
+<Image src={'/images/komplikasi.jpg'} className='w-[90%] contain-strict shadow-2xl' alt='' width={1500} height={1000}></Image>
 </div>
 
 <div className="w-full md:w-1/2 flex items-center justify-center">
@@ -233,7 +233,7 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 </div>
 
 
-<div className="w-full flex flex-wrap px-6 md:px-18 py-10 bg-sky-700">
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 bg-sky-700">
 <div className="w-full md:w-1/2 flex items-center justify-center">
 <div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
 <h1 className='text-lg text-sky-500 font-bold mb-2'>Pencegahan</h1>
@@ -248,8 +248,8 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 </div>
 </div>
 
-<div className="hidden md:block w-1/2">
-<Image src={'/images/pencegahan.jpg'} className='w-[90%] contain-strict' alt='' width={1500} height={1000}></Image>
+<div className="w-full md:block md:w-1/2 flex items-center justify-center mb-5">
+<Image src={'/images/pencegahan.jpg'} className='w-[90%] contain-strict shadow-2xl' alt='' width={1500} height={1000}></Image>
 </div>
 
 </div>
@@ -264,6 +264,11 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
         <div id='two' className="pt-28 mx-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus eligendi nisi inventore dolorum incidunt est! Illo dolor molestiae voluptatem perspiciatis tempore qui! Nisi corrupti, rem accusamus tempora quod nulla neque earum fugit dolor ipsam alias voluptas provident, adipisci, impedit sit consectetur at? Quos quia quasi, et delectus ducimus facere ipsam consequuntur magni iure tempora voluptatum eos harum tempore.
         </div> */}
+
+
+<div className="flex flex-wrap items-center justify-center pt-20 pb-20">
+    <iframe src="https://www.youtube.com/embed/FPPQqhkskRA" allowFullScreen width="640" height="480" />
+</div>
 
       </div>
 

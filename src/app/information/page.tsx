@@ -256,6 +256,186 @@ Klasifikasi diabetes melitus secara umum dibagi menjadi beberapa tipe utama, yai
 </div>
 
 
+
+<div id="">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> HIPOGLIKEMIA <span className='flex-grow border-t border-sky-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Penanganan</h1>
+<p>
+A. Grade 1: 
+- Beri asupan gula cepat serap seperti ( jus buah atau tablet glukosa) segera setelah tanda muncul. <br />
+- Pantau kadar gula darah dan edukasi pasien untuk mengenali gejala awal hipoglikemia guna mencegah memburuk.<br /> <br />
+B. Grade 2 :  <br />
+- Penanganan harus lebih cepat dan intensif dengan konsumsi gula yang cukup dan monitoring glukosa lebih ketat. <br />
+- Evaluasi terapi obat diabetes dan edukasi pasien agar mengantisipasi gangguan aktivitas karena gejala yang lebih berat. <br /> <br />
+
+C. Grade 3 : <br />
+- Hipoglikemia berat memerlukan penanganan medis darurat seperti pemberian injeksi glukagon atau infus glukosa intravena. <br />
+- Setelah kondisi stabil, penilaian ulang regimen terapi serta edukasi intensif pada pasien dan keluarga penting dilakukan agar kejadian tersebut tidak terulang. <br />
+
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div id="">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> HIPERGLIKEMIA   <span className='flex-grow border-t border-sky-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Penanganan</h1>
+<p>
+1. Grade 1 (Ringan) <br />
+- Lakukan pengendalian diet, tingkatkan aktivitas fisik, dan pantau gula darah secara rutin. Jika gejala bertambah, konsultasikan dengan dokter untuk evaluasi lebih lanjut. <br /><br />
+
+2. Grade 2 (Sedang) <br />
+- Segera lakukan konsultasi ke fasilitas kesehatan untuk penyesuaian terapi obat dan pemantauan lebih intensif. <br /><br />
+
+3. Grade 3 (Berat) <br />
+- Kondisi ini termasuk kegawatdaruratan medis yang memerlukan penanganan  segera untuk stabilisasi gula darah, rehidrasi, dan perawatan intensif. <br />
+
+
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div id="">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> RETINOPATI DIABETIK    <span className='flex-grow border-t border-sky-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Penanganan</h1>
+<p>
+1. Grade 1 <br />
+    Pantau secara rutin dengan pemeriksaan retina setiap 6-12 bulan, kontrol ketat gula darah, dan edukasi pencegahan progresi retinopati. <br /><br />
+
+2. Grade 2 <br />
+    Segera lakukan pemeriksaan oftalmologi lebih lanjut, kontrol ketat gula darah dan tekanan darah, serta pertimbangkan terapi laser fotokoagulasi jika diperlukan untuk mencegah progresi. <br /><br />
+
+3. Grade 3 <br />
+    Perlu penanganan cepat dengan laser pan-retina, injeksi intravitreal anti-VEGF, dan/atau vitrektomi untuk mencegah kebutaan, serta kontrol metabolik ketat. <br />
+
+
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div id="">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> NEFROPATI DIABETIK    <span className='flex-grow border-t border-sky-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Penanganan</h1>
+<p>
+A. Grade 1 (Mikroalbuminuria: AuCR 30-300 mg/g) <br />
+- Kontrol ketat gula darah dengan pengobatan antidiabetes sesuai kebutuhan. <br />
+- Evaluasi rutin fungsi ginjal dan pemeriksaan AuCR setiap 3-6 bulan. <br />
+- Edukasi gaya hidup sehat: diet rendah protein, garam, olahraga teratur. <br /><br />
+
+B. Grade 2 ({`Makroalbuminuria, AuCR > 300 mg/g`}) <br />
+- Pemeriksaan fungsi ginjal lebih ketat (ureum, kreatinin, LFG) setiap 3 bulan. <br />
+- Penyesuaian diet rendah protein dan gangguan elektrolit (kalium, fosfor) bila diperlukan. <br />
+- Rujukan ke dokter spesialis ginjal untuk evaluasi lanjutan dan edukasi intensif pasien mengenai pengelolaan penyakit dan penyakit komorbid. <br /><br />
+
+C. Grade 3 (Nefropati lanjut) <br />
+- Pemantauan ketat fungsi ginjal setiap 1-3 bulan. <br />
+- Terapi farmakologis optimal untuk mengendalikan gula darah, tekanan darah, dan komplikasi. <br />
+- Persiapan dan edukasi pasien untuk terapi pengganti ginjal seperti dialisis atau transplantasi dan pengawasan ketat pola hidup dan terapi suportif. <br />
+
+
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div id="">
+<div className="text-2xl text-sky-600 text-center mt-24 flex items-center justify-center my-4">
+    <div className="md:w-[30%] text-center flex items-center justify-center my-4">
+   <span className='flex-grow border-t border-sky-600 mr-2'></span> NEUROPATI DIABETIK     <span className='flex-grow border-t border-sky-600 ml-2'></span>
+    </div>
+</div>
+
+
+<div className="w-full flex flex-wrap-reverse px-6 md:px-18 py-10 ">
+<div className="w-full flex items-center justify-center">
+<div className="w-[90%] bg-white shadow-2xl rounded-2xl p-4">
+<h1 className='text-lg text-sky-500 font-bold mb-2'>Penanganan</h1>
+<p>
+Grade 1 <br />
+- Kontrol ketat gula darah dan edukasi perawatan kaki,  <br />
+- Melakukan pemeriksaan rutin setiap 6 bulan. <br /><br />
+
+Grade 2 <br />
+- Terapi kontrol gula darah intensif <br />
+- Fisioterapi untuk memperkuat otot dan meningkatkan keseimbangan dan melakukan pemeriksaan neurologis rutin tiap 3 bulan <br /><br />
+
+Grade 3 <br />
+- Penanganan multidisipliner melibatkan dokter saraf, dan perawatan luka <br />
+- Penggunaan alat bantu jalan dan perawatan intensif kaki untuk mencegah amputasi <br />
+
+
+
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
         {/* <div id='one' className="pt-28 mx-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus eligendi nisi inventore dolorum incidunt est! Illo dolor molestiae voluptatem perspiciatis tempore qui! Nisi corrupti, rem accusamus tempora quod nulla neque earum fugit dolor ipsam alias voluptas provident, adipisci, impedit sit consectetur at? Quos quia quasi, et delectus ducimus facere ipsam consequuntur magni iure tempora voluptatum eos harum tempore.
         </div>

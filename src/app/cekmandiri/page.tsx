@@ -137,6 +137,7 @@ const cekDiabetes = () =>{
   // let score = 0
   // score += umur >= 45 ? 1 : 0
   // score += bmi >= 25 ? 1 : 0
+  
 // hipoglikemia
   if(jawaban[2].answer === "ya")
   {

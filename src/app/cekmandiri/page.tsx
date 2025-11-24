@@ -34,25 +34,19 @@ const [jawaban, setJawaban] = useState([
 
 ])
 
-const url = "https://script.google.com/macros/s/AKfycbz4Wbawy7vmgYXhgVacW8nk3aZZ_yZiaPCv3yjYB3I/devhttps://script.google.com/macros/s/AKfycbyOJ4J5vExa9FJC6y6A2P5_C9rzJMQSnNeFFyAOX5f1CuXhKH_jnAccesTgJv7t26sV/exec"
+const url = "https://script.google.com/macros/s/AKfycbyOJ4J5vExa9FJC6y6A2P5_C9rzJMQSnNeFFyAOX5f1CuXhKH_jnAccesTgJv7t26sV/exec"
 // tambah data ke spreadsheet
           const saveToDB = async () => {
             
        
 // nama=${nama.toString()}alamat=${alamat.toString()}&gula_darah=${guldar.toString()}&statistik=${statistik.toString()}&diastolik=${diastolik.toString()}&tinggi=${tinggi.toString()}&berat=${berat.toString()}&umur=${umur.toString()}&bmi=${bmi.toString()}&hipoglikemia=${result[0].toString()}&hiperglekimia=${result[1].toString()}&retinopati_diabetik=${result[2].toString()}&Nefropati_diabetik=${result[3].toString()}&Neuropati_diabetik=${result[4].toString()}
                 // console.log('hasil', url+`?action=add-rekam&nama=${nama.toString()}&alamat=${alamat.toString()}&gula_darah=${guldar.toString()}&statistik=${statistik.toString()}&diastolik=${diastolik.toString()}&tinggi=${tinggi.toString()}&berat=${berat.toString()}&umur=${umur.toString()}&bmi=${bmi.toString()}&hipoglikemia=${hasil[0].res.toString()}&hiperglekimia=${hasil[1].res.toString()}&retinopati_diabetik=${hasil[2].res.toString()}&Nefropati_diabetik=${hasil[3].res.toString()}&Neuropati_diabetik=${hasil[4].res.toString()}`)
-
-
-                 await fetch(url+`?action=add-rekam&nama=${nama.toString()}&alamat=${alamat.toString()}&gula_darah=${guldar.toString()}&statistik=${statistik.toString()}&diastolik=${diastolik.toString()}&tinggi=${tinggi.toString()}&berat=${berat.toString()}&umur=${umur.toString()}&bmi=${bmi.toString()}&hipoglikemia=${hasil[0].res.toString()}&hiperglekimia=${hasil[1].res.toString()}&retinopati_diabetik=${hasil[2].res.toString()}&Nefropati_diabetik=${hasil[3].res.toString()}&Neuropati_diabetik=${hasil[4].res.toString()}`)
-                .then((res) => res.json())
-                .then(() => {
-                  alert("data berhasil disimpan")
-                  setLoading(true)
-                  
-                })
-             alert("data berhasil disimpan")
+ alert("data berhasil disimpan")
                   setLoading(true)
              console.log("Berhasi;")
+
+                 await fetch(url+`?action=add-rekam&nama=${nama.toString()}&alamat=${alamat.toString()}&gula_darah=${guldar.toString()}&statistik=${statistik.toString()}&diastolik=${diastolik.toString()}&tinggi=${tinggi.toString()}&berat=${berat.toString()}&umur=${umur.toString()}&bmi=${bmi.toString()}&hipoglikemia=${hasil[0].res.toString()}&hiperglekimia=${hasil[1].res.toString()}&retinopati_diabetik=${hasil[2].res.toString()}&Nefropati_diabetik=${hasil[3].res.toString()}&Neuropati_diabetik=${hasil[4].res.toString()}`)
+            
          }
 
         //  nama
@@ -137,7 +131,7 @@ const cekDiabetes = () =>{
   // let score = 0
   // score += umur >= 45 ? 1 : 0
   // score += bmi >= 25 ? 1 : 0
-  
+
 // hipoglikemia
   if(jawaban[2].answer === "ya")
   {
@@ -434,7 +428,7 @@ const toQuestion = () =>{
     <a className='ml-auto text-green-400'>Selesai </a>
 
     :
-    <button onClick={()=>{saveToDB()}} className='text-white ml-auto p-2 bg-amber-500'>Kirim Data </button>
+    <button onClick={()=>{saveToDB()}} className='text-white ml-auto p-2 bg-amber-500 hover:bg-amber-700'>Kirim Data </button>
     
   }
    </div>
